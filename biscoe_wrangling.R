@@ -57,7 +57,7 @@ dream_output <- my_function(island_to_use = "Dream")
 
 # Run my_function() on each island (Biscoe, Torgersen, Dream)
 
-islands_we_want <- c("Biscoe", "Torgersen", "Dream")
+islands_we_want <- unique(my_data$island)
 cleaned_data <- list()
 
 for(i in 1:3) {
